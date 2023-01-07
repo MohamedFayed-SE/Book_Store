@@ -1,4 +1,7 @@
+using AutoMapper;
 using BAL;
+using BLL.Interfaces;
+using BLL.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,7 +13,13 @@ builder.Services.AddDbContext<ApplicationDbContext>
 
 
 // Add services to the container.
+
+
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<IAutherService, AuthorService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 

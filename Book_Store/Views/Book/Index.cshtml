@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@model IEnumerable<BLL.Dtos.BookDTo>;
+
+<h2>Index</h2>
+<div class="col-md-3">
+    <a class="w-100" asp-controller="Book" asp-action="Create"><button class="btn btn-primary w-100">Add</button></a>
+</div>
+
+<table class="table">
+
+    <tbody>
+
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col"># ID</th>
+                   
+                    <th scope="col">Name</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Rating</th>
+                    
+                    <th scope="col">Update</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@item.Id</th>
+                        <td>@item.Name</td>
+                        <td>@item.Category.Name</td>
+                        <td>@item.Rating</td>
+
+                        
+                        <td>  <a asp-route-Id="@item.Id" asp-controller="Client" asp-action="Edit"> <button class="btn btn-info">Update</button> </a></td>
+                        <td> <a asp-route-Id="@item.Id"> <button class="btn btn-danger">Delte</button> </a></td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+
+
+
+    </tbody>
+</table>
+
+
+
+
