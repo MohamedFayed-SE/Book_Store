@@ -103,6 +103,8 @@ namespace BLL.Services
                     AuthorP.Name = author.Name;
                    
                     var Result = _Mapper.Map<AuthorDto>(AuthorP);
+                    _Context.Authors.Update(AuthorP);
+                    await _Context.SaveChangesAsync();
                     return Result;
                 }
 

@@ -56,33 +56,33 @@ namespace BAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "AuthorBook",
+                name: "AuthorBooks",
                 columns: table => new
                 {
-                    AuthorListId = table.Column<int>(type: "int", nullable: false),
-                    BookListId = table.Column<int>(type: "int", nullable: false)
+                    BookId = table.Column<int>(type: "int", nullable: false),
+                    AuthorId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AuthorBook", x => new { x.AuthorListId, x.BookListId });
+                    table.PrimaryKey("PK_AuthorBooks", x => new { x.AuthorId, x.BookId });
                     table.ForeignKey(
-                        name: "FK_AuthorBook_Authors_AuthorListId",
-                        column: x => x.AuthorListId,
+                        name: "FK_AuthorBooks_Authors_AuthorId",
+                        column: x => x.AuthorId,
                         principalTable: "Authors",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_AuthorBook_books_BookListId",
-                        column: x => x.BookListId,
+                        name: "FK_AuthorBooks_books_BookId",
+                        column: x => x.BookId,
                         principalTable: "books",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_AuthorBook_BookListId",
-                table: "AuthorBook",
-                column: "BookListId");
+                name: "IX_AuthorBooks_BookId",
+                table: "AuthorBooks",
+                column: "BookId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_books_CategoryId",
@@ -93,7 +93,7 @@ namespace BAL.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "AuthorBook");
+                name: "AuthorBooks");
 
             migrationBuilder.DropTable(
                 name: "Authors");

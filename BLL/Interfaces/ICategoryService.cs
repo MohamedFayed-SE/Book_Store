@@ -14,7 +14,7 @@ namespace BLL.Interfaces
         public Task<CategoryDto> UpdateAsync(CategoryDto category);
         public Task<CategoryDto> GetById(int id);
 
-        public void DeleteAsync(int id);
+        public void Delete(int id);
 
 
     }

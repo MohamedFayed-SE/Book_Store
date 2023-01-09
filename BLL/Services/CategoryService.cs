@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BAL;
+using BAL.Models;
 using BLL.Dtos;
 using BLL.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -28,11 +29,13 @@ namespace BLL.Services
             try
             {
                 if (category != null)
+
                 {
-                    var Category = await _Context.AddAsync(category);
+                    var Category = _Mapper.Map<Category>(category);
+                    var Result = await _Context.Categories.AddAsync(Category);
                     await _Context.SaveChangesAsync();
-                    var Result = _Mapper.Map<CategoryDto>(Category);
-                    return Result;
+                    
+                    return category;
                 }
                 else
                     throw new Exception("Cannot Add Nulll Category");
@@ -42,14 +45,44 @@ namespace BLL.Services
             }
         }
 
-        public void DeleteAsync(int id)
+        public void Delete(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var Category =  _Context.Categories.SingleOrDefault(c => c.Id == id);
+                if (Category != null)
+                {
+                    _Context.Remove(Category);
+                    _Context.SaveChanges();
+                   
+                }
+                else
+                    throw new Exception($"Cannot Find Category With Id ={id}");
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
-        public Task<CategoryDto> GetById(int id)
+        public async Task<CategoryDto> GetById(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var Category =  await _Context.Categories.SingleOrDefaultAsync(c=>c.Id==id);
+                if (Category != null)
+                {
+                    var Result = _Mapper.Map<CategoryDto>(Category);
+                    return Result;
+                }
+                else
+                    throw new Exception($"Cannot Find Category With Id ={id}");
+                
+            }catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public async Task<IEnumerable<CategoryDto>> GetCategoriesAsync()
@@ -60,9 +93,26 @@ namespace BLL.Services
 
         }
 
-        public Task<CategoryDto> UpdateAsync(CategoryDto category)
+        public  async Task<CategoryDto> UpdateAsync(CategoryDto category)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var Category = await _Context.Categories.SingleOrDefaultAsync(c => c.Id == category.Id);
+                if (Category != null)
+                {
+                    Category.Name = category.Name;
+                    await _Context.SaveChangesAsync();
+                    var Result = _Mapper.Map<CategoryDto>(Category);
+                    return Result;
+                }
+                else
+                    throw new Exception($"Cannot Find Category With Id ={category.Id}");
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

@@ -10,7 +10,7 @@ namespace BLL.Dtos
 {
     public class BookDTo
     {
-        public int? Id { get; set; }
+        public int Id { get; set; }
         [Required(ErrorMessage ="Name is Required")]
         public string Name { get; set; }
 
@@ -21,6 +21,8 @@ namespace BLL.Dtos
 
         public Category? Category { get; set; }
 
-        public List<Author>? AuthorList { get; set; }
+        public List<Author>? Authors { get; set; }
+
+        public List<AuthorBook>? AuthorBooks { get; set; }
     }
 }

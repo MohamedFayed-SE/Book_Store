@@ -37,8 +37,8 @@
                         <td>@item.Rating</td>
 
                         
-                        <td>  <a asp-route-Id="@item.Id" asp-controller="Client" asp-action="Edit"> <button class="btn btn-info">Update</button> </a></td>
-                        <td> <a asp-route-Id="@item.Id"> <button class="btn btn-danger">Delte</button> </a></td>
+                        <td>  <a asp-route-Id="@item.Id" asp-controller="Book" asp-action="Update"> <button class="btn btn-info">Update</button> </a></td>
+                        <td> <a asp-route-Id="@item.Id" asp-controller="Book" asp-action="Delete" > <button class="btn btn-danger">Delete</button> </a></td>
                     </tr>
                 }
 

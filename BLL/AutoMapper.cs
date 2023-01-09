@@ -19,6 +19,7 @@ namespace BLL
             CreateMap<Author, AuthorDto>().ReverseMap();
 
             CreateMap<Category, CategoryDto>().ReverseMap();
+            CreateMap<AuthorBook, AuthorsBooksDto>().ReverseMap();
         }
     }
 }

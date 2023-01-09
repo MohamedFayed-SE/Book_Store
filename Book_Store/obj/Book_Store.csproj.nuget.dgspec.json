@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\Book_Store\\Book_Store.csproj": {}
+    "C:\\Users\\HP\\Desktop\\Book_Store\\Book_Store\\Book_Store.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\BAL\\BAL.csproj": {
+    "C:\\Users\\HP\\Desktop\\Book_Store\\BAL\\BAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\BAL\\BAL.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Book_Store\\BAL\\BAL.csproj",
         "projectName": "BAL",
-        "projectPath": "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\BAL\\BAL.csproj",
-        "packagesPath": "C:\\Users\\mohamed.fayed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\BAL\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Desktop\\Book_Store\\BAL\\BAL.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\Book_Store\\BAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\mohamed.fayed\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,22 +71,17 @@
         }
       }
     },
-    "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\BLL\\BLL.csproj": {
+    "C:\\Users\\HP\\Desktop\\Book_Store\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Book_Store\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\BLL\\BLL.csproj",
-        "packagesPath": "C:\\Users\\mohamed.fayed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\BLL\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Desktop\\Book_Store\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\Book_Store\\BLL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\mohamed.fayed\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,8 +95,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\BAL\\BAL.csproj": {
-                "projectPath": "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\BAL\\BAL.csproj"
+              "C:\\Users\\HP\\Desktop\\Book_Store\\BAL\\BAL.csproj": {
+                "projectPath": "C:\\Users\\HP\\Desktop\\Book_Store\\BAL\\BAL.csproj"
               }
             }
           }
@@ -146,22 +136,17 @@
         }
       }
     },
-    "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\Book_Store\\Book_Store.csproj": {
+    "C:\\Users\\HP\\Desktop\\Book_Store\\Book_Store\\Book_Store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\Book_Store\\Book_Store.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Book_Store\\Book_Store\\Book_Store.csproj",
         "projectName": "Book_Store",
-        "projectPath": "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\Book_Store\\Book_Store.csproj",
-        "packagesPath": "C:\\Users\\mohamed.fayed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\Book_Store\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Desktop\\Book_Store\\Book_Store\\Book_Store.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\Book_Store\\Book_Store\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\mohamed.fayed\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -175,8 +160,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\BLL\\BLL.csproj": {
-                "projectPath": "C:\\Users\\mohamed.fayed\\Desktop\\Book_Store\\BLL\\BLL.csproj"
+              "C:\\Users\\HP\\Desktop\\Book_Store\\BLL\\BLL.csproj": {
+                "projectPath": "C:\\Users\\HP\\Desktop\\Book_Store\\BLL\\BLL.csproj"
               }
             }
           }

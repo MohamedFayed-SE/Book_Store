@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230106144127_Initail")]
+    [Migration("20230108073919_Initail")]
     partial class Initail
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -22,21 +22,6 @@ namespace BAL.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
-
-            modelBuilder.Entity("AuthorBook", b =>
-                {
-                    b.Property<int>("AuthorListId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("BookListId")
-                        .HasColumnType("int");
-
-                    b.HasKey("AuthorListId", "BookListId");
-
-                    b.HasIndex("BookListId");
-
-                    b.ToTable("AuthorBook");
-                });
 
             modelBuilder.Entity("BAL.Models.Author", b =>
                 {
@@ -53,6 +38,21 @@ namespace BAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Authors");
+                });
+
+            modelBuilder.Entity("BAL.Models.AuthorBook", b =>
+                {
+                    b.Property<int>("AuthorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.HasKey("AuthorId", "BookId");
+
+                    b.HasIndex("BookId");
+
+                    b.ToTable("AuthorBooks");
                 });
 
             modelBuilder.Entity("BAL.Models.Book", b =>
@@ -97,19 +97,23 @@ namespace BAL.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("AuthorBook", b =>
+            modelBuilder.Entity("BAL.Models.AuthorBook", b =>
                 {
-                    b.HasOne("BAL.Models.Author", null)
-                        .WithMany()
-                        .HasForeignKey("AuthorListId")
+                    b.HasOne("BAL.Models.Author", "Author")
+                        .WithMany("AuthorBooks")
+                        .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BAL.Models.Book", null)
-                        .WithMany()
-                        .HasForeignKey("BookListId")
+                    b.HasOne("BAL.Models.Book", "Book")
+                        .WithMany("AuthorBooks")
+                        .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Author");
+
+                    b.Navigation("Book");
                 });
 
             modelBuilder.Entity("BAL.Models.Book", b =>
@@ -121,6 +125,16 @@ namespace BAL.Migrations
                         .IsRequired();
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("BAL.Models.Author", b =>
+                {
+                    b.Navigation("AuthorBooks");
+                });
+
+            modelBuilder.Entity("BAL.Models.Book", b =>
+                {
+                    b.Navigation("AuthorBooks");
                 });
 #pragma warning restore 612, 618
         }

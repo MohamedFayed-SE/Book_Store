@@ -17,7 +17,10 @@ namespace BAL.Models
 
         public Category Category { get; set; }
 
-        public List<Author> AuthorList { get; set; }
+        public List<Author> Authors { get; set; }
+
+        public List<AuthorBook> AuthorBooks { get; set; }
+
 
 
 

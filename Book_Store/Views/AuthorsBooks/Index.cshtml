@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@model IEnumerable<BLL.Dtos.AuthorsBooksDto>;
+
+@section DataTableCS {
+    @*<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
+
+    <link href="~/plugins/jquery-datatable/skin/bootstrap/css/datatables.bootstrap.css" rel="stylesheet" />*@
+    <link href="~/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="~/plugins/jquery-datatable/skin/bootstrap/css/datatables.bootstrap.min.css" rel="stylesheet" />
+}
+    <div class="" style="margin-bottom: 25px;">
+    <a class="w-100 p-4" asp-controller="AuthorsBooks" asp-action="Create"><button class="btn btn-primary w-100">Add</button></a>
+</div>
+  
+     <div class="table-responsive">
+
+
+
+
+            <table class="table table-bordered table-striped table-hover js-basic-example dataTable" id="AuthorBookTableId">
+                    <thead class="thead-dark">
+                        <tr>
+
+
+                            <th scope="col">Book Name</th>
+                            <th scope="col">Book Category</th>
+                            <th scope="col">Book Rateing</th>
+
+                            <th scope="col">AuthorName</th>
+
+
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th scope="row">@item.Book.Name</th>
+                            <td>@item.Book.Category.Name</td>
+                            <td>@item.Book.Rating</td>
+                            <td>@item.Author.Name</td>
+
+
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+
+
+
+  
+</div>
+
+   
+
+
+
+@section DataTableJS{
+   @* <script src="~/plugins/jquery-datatable/jquery.datatables.js"></script>
+    <script src="~/plugins/jquery-datatable/skin/bootstrap/js/datatables.bootstrap.js"></script>*@
+   @* <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>*@
+    <script src="~/plugins/jquery-datatable/jquery.datatables.js"></script>
+    <script src="~/plugins/jquery-datatable/skin/bootstrap/js/datatables.bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#AuthorBookTableId').DataTable();
+        });
+    </script>
+   
+    
+}
+
+
+
+
+
+

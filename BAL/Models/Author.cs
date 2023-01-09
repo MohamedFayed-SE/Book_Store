@@ -10,6 +10,7 @@ namespace BAL.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public List<Book> BookList { get; set; }
+        public List<Book> Books { get; set; }
+        public List<AuthorBook> AuthorBooks { get; set; }
     }
 }
