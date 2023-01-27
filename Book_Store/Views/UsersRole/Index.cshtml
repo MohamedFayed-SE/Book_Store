@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+@model IEnumerable<BLL.Identity.Dtos.UserRoleVm>;
+
+<h2>Index</h2>
+<div class="col-md-3">
+    <a class="w-100" asp-controller="Role" asp-action="Create"><button class="btn btn-primary w-100">Add</button></a>
+</div>
+
+<table class="table">
+
+    <tbody>
+
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">User ID</th>
+
+                    <th scope="col">Name</th>
+
+
+                    <th scope="col">Update</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@item.UserId</th>
+                        <td>@item.UserName</td>
+@*                        <td>@item.UserRoles.Where(r=>r.IsSelected).Select(r=>r.Name.ToString()).ToArray().Join(",")</td>
+*@
+                        <td>@String.Join(",",@item.UserRoles.Where(r=>r.IsSelected).Select(r=>r.Name.ToString()))</td>
+
+                        <td> <a asp-route-Id="@item.UserId" asp-controller="UsersRole" asp-action="ManageRoles"> <button class="btn btn-danger">Manager Roles</button> </a></td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+
+
+
+    </tbody>
+</table>
+
+
+
+

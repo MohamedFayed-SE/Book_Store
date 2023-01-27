@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewData["Title"] = "AssignUserToRoles";
+}
+@model   BLL.Identity.Dtos.UserRoleVm
+<h2>AssignUserToRoles</h2>
+
+<table class="table">
+
+    <tbody>
+
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">@Model.UserName</th>
+                   
+                  
+                   
+
+
+                  
+                </tr>
+            </thead>
+            <tbody>
+              
+                    
+                        <form asp-controller="UsersRole" asp-action="ManageRoles">
+                           <input type="hidden" asp-for="UserName" />
+                           <input type="hidden" asp-for="UserId" />
+                            
+                        @for (int i=0; i<Model.UserRoles.Count;i++)
+                        {
+                    <tr>
+
+                        <td>
+                            <div class="form-group">
+                                <input type="hidden" asp-for="@Model.UserRoles[i].Id">
+                                <input type="hidden" asp-for="@Model.UserRoles[i].Name">
+                                <input asp-for="@Model.UserRoles[i].IsSelected" class="form-check-input" type="checkbox" id="@Model.UserRoles[i].Id" name="@Model.UserRoles[i].Name" checked="@Model.UserRoles[i].IsSelected">
+                                <label for="@Model.UserRoles[i].Id">@Model.UserRoles[i].Name"</label>
+                            </div>
+                                    @* <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="true" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                        </label>
+                        </div>*@
+                        </td>
+                    </tr>
+
+                        }
+                    <tr>
+                    <button type="submit" class="btn btn-info">Save</button>
+                    </tr>
+                        </form>
+                      
+                       
+
+                   
+                  
+                        
+
+                    </tr>
+              
+
+
+            </tbody>
+        </table>
+
+
+
+    </tbody>
+</table>
