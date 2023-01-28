@@ -8,109 +8,113 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Book_Store
 build_property.RootNamespace = Book_Store
-build_property.ProjectDir = C:\Users\HP\Desktop\Book_Store\Book_Store\
+build_property.ProjectDir = C:\Users\mohamed.fayed\Desktop\Book_Store\Book_Store\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\HP\Desktop\Book_Store\Book_Store
+build_property.MSBuildProjectDirectory = C:\Users\mohamed.fayed\Desktop\Book_Store\Book_Store
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/AuthorsBooks/Create.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/AuthorsBooks/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc0Jvb2tzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/AuthorsBooks/Index.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/AuthorsBooks/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc0Jvb2tzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Author/Create.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Author/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Author/Delete.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Author/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Author/Index.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Author/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Author/Update.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Author/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Book/Create.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Book/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Book/Delete.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Book/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Book/Index.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Book/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Book/Update.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Book/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Category/Create.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Category/Delete.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Category/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Category/Index.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Category/Update.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Category/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Home/Index.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Role/Create.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Role/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Role/Index.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Role/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/UsersRole/Index.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/UsersRole/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNSb2xlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/UsersRole/ManageRoles.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/UsersRole/ManageRoles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNSb2xlXE1hbmFnZVJvbGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/User/Create.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/User/Index.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/_ViewImports.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/User/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dJbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/_ViewStart.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Book_Store/Book_Store/Views/Shared/_Layout.cshtml]
+[C:/Users/mohamed.fayed/Desktop/Book_Store/Book_Store/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9wdo1tf3ot

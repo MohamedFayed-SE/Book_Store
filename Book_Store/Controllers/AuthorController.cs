@@ -1,11 +1,13 @@
 ﻿using BLL.Dtos;
 using BLL.Interfaces;
 using BLL.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Book_Store.Controllers
 {
+    [Authorize(Roles = "BasicUser")]
     public class AuthorController : Controller
     {
         private readonly IAutherService _AuthorService;
@@ -20,6 +22,7 @@ namespace Book_Store.Controllers
             var Result = await _AuthorService.GetAuthorsAsync();
             return View(Result);
         }
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create()
         {
 

@@ -6,6 +6,7 @@ using BLL.Interfaces;
 using BLL.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -38,6 +39,14 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.User.RequireUniqueEmail = false;
 });
 
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.Cookie.HttpOnly=true;
+    options.LoginPath = "/User/LogIn";
+    options.AccessDeniedPath = "/Account/AccessDenired";
+    options.SlidingExpiration = true;
+
+});
 
 // Add services to the container.
 
@@ -63,10 +72,11 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.UseRouting();
 
+app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+
 
 
 app.MapControllerRoute(

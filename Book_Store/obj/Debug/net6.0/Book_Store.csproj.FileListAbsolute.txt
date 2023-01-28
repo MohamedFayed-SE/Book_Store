@@ -611,3 +611,8 @@ C:\Users\HP\Desktop\Book_Store\Book_Store\obj\Debug\net6.0\refint\Book_Store.dll
 C:\Users\HP\Desktop\Book_Store\Book_Store\obj\Debug\net6.0\Book_Store.pdb
 C:\Users\HP\Desktop\Book_Store\Book_Store\obj\Debug\net6.0\Book_Store.genruntimeconfig.cache
 C:\Users\HP\Desktop\Book_Store\Book_Store\obj\Debug\net6.0\ref\Book_Store.dll
+C:\Users\mohamed.fayed\Desktop\Book_Store\Book_Store\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\mohamed.fayed\Desktop\Book_Store\Book_Store\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\mohamed.fayed\Desktop\Book_Store\Book_Store\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\mohamed.fayed\Desktop\Book_Store\Book_Store\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\mohamed.fayed\Desktop\Book_Store\Book_Store\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

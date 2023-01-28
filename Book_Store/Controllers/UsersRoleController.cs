@@ -70,10 +70,19 @@ namespace Book_Store.Controllers
         {
             var Result = model;
 
+            var user = await _userManager.FindByIdAsync(model.UserId);
+            if (user == null)
+                return NotFound();
+            var userRoles =await  _userManager.GetRolesAsync(user);
+
+            await _userManager.RemoveFromRolesAsync(user, userRoles);
+            var SelectedRoles = model.UserRoles.Where(sr => sr.IsSelected==true).Select(sr => sr.Name).ToList();
+           await _userManager.AddToRolesAsync(user, SelectedRoles);
 
 
 
-            return View();
+
+            return RedirectToAction("Index");   
         }
 
 
