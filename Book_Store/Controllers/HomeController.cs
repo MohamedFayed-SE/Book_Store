@@ -5,9 +5,10 @@ using System.Diagnostics;
 
 namespace Book_Store.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "DeafoultUser")]
     public class HomeController : Controller
     {
+       
        
         private readonly ILogger<HomeController> _logger;
 

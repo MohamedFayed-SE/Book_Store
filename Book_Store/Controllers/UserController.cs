@@ -11,7 +11,7 @@ namespace Book_Store.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
-
+        
         public UserController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
@@ -105,7 +105,7 @@ namespace Book_Store.Controllers
                         throw new Exception("User Is Not Exist");
                     var result = await _signInManager.PasswordSignInAsync(user, model.Password, true, false);
                     if (result.Succeeded)
-                        return RedirectToAction("Home", "Index");
+                        return RedirectToAction("Index", "Home");
                     else
                         throw new Exception("User Cannot Sign In");
 
@@ -119,6 +119,13 @@ namespace Book_Store.Controllers
             }
             
             
+        }
+        public async Task<IActionResult> LogOut()
+        {
+            
+            await _signInManager.SignOutAsync();
+
+           return RedirectToAction("User", "LogIn");
         }
 
 

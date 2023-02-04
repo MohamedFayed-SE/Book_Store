@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace Book_Store.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class RoleController : Controller
     {
+      
         private readonly RoleManager<IdentityRole> _roleManager;
 
         public RoleController(RoleManager<IdentityRole> roleManager)
@@ -16,6 +19,7 @@ namespace Book_Store.Controllers
         public async Task<IActionResult> Index()
         {
             var Roles = await _roleManager.Roles.ToListAsync();
+           
             return View(Roles);
         }
         public async Task<IActionResult> Create()
@@ -27,7 +31,7 @@ namespace Book_Store.Controllers
         public async Task<IActionResult> Create(IdentityRole role)
         {
             try
-            {
+            { 
                 if(role==null)
                     throw new Exception("Please Enter Role Name");
                 else

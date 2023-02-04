@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+@model List<string>;
+
+<h2>Index</h2>
+<div class="col-md-3">
+    <a class="w-100" asp-controller="Category" asp-action="Create"><button class="btn btn-primary w-100">Add</button></a>
+</div>
+
+<table class="table">
+
+    <tbody>
+
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col"># Module</th>
+
+                    <th scope="col">Actions</th>
+
+
+                    <th scope="col">Actions</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@item.Split(",")[0]</th>
+                        <td>@item.Split(",")[1]</td>
+                        <td></td>
+
+@*
+                        <td>  <a asp-route-Id="@item.Id" asp-controller="Category" asp-action="Update"> <button class="btn btn-info">Update</button> </a></td>
+                        <td> <a asp-route-Id="@item.Id" asp-controller="Category" asp-action="Delete"> <button class="btn btn-danger">Delete</button> </a></td>*@
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+
+
+
+    </tbody>
+</table>
+
+
+
+
